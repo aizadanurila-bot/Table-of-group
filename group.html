@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Наша группа</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f5f7fa;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: white;
+            margin: 5px auto;
+            width: 300px;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #2980b9;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        th {
+            background: #3498db;
+            color: white;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        /* Скрытая страница */
+        #mePage {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Главная страница -->
+<div id="mainPage">
+
+<h1>Наша группа</h1>
+
+<h2>Список студентов</h2>
+<ul>
+    <li>Авьдал Бахатбек</li>
+    <li>Алтай Еркебұлан</li>
+    <li>Айдархан Әмина</li>
+    <li>Әуесбеков Алиби</li>
+    <li>Баймұрат Мұхамет</li>
+    <li>Базаралы Асқат</li>
+    <li><a href="#" onclick="showMe()">Бектемір Айзада</a></li>
+    <li>Баянғазина Мадина</li>
+    <li>Ербол Елқұт</li>
+    <li>Елюбаев Алихан</li>
+    <li>Кагва Бүрлен</li>
+    <li>Қаламбек Мағжан</li>
+    <li>Қадылбек Ділжан</li>
+    <li>Мырзабай Дінмұхамед</li>
+    <li>Серікбай Данияр</li>
+    <li>Талапхан Дина</li>
+    <li>Татен Нұрасыл</li>
+    <li>Темирбулатов Сұлтан</li>
+    <li>Тойлат Азамат</li>
+    <li>Уалиева Балжана</li>
+    <li>Халел Нұрмұхаммед</li>
+    <li>Хазкей Айболат</li>
+    <li>Шәуәт Нарат</li>
+</ul>
+
+<h2>Таблица студентов</h2>
+<table>
+<tr><th>№</th><th>Имя</th></tr>
+<tr><td>1</td><td>Авьдал Бахатбек</td></tr>
+<tr><td>2</td><td>Алтай Еркебұлан</td></tr>
+<tr><td>3</td><td>Айдархан Әмина</td></tr>
+<tr><td>4</td><td>Әуесбеков Алиби</td></tr>
+<tr><td>5</td><td>Баймұрат Мұхамет</td></tr>
+<tr><td>6</td><td>Базаралы Асқат</td></tr>
+<tr><td>7</td><td>Бектемір Айзада</td></tr>
+</table>
+
+<h2>Фото группы</h2>
+<img src="group.jpg">
+
+</div>
+
+<!-- Твоя страница -->
+<div id="mePage">
+    <h1>Бектемір Айзада</h1>
+    <p>Я студентка и изучаю HTML и CSS.</p>
+    <button onclick="goBack()">Назад</button>
+</div>
+
+<script>
+function showMe() {
+    document.getElementById("mainPage").style.display = "none";
+    document.getElementById("mePage").style.display = "block";
+}
+
+function goBack() {
+    document.getElementById("mainPage").style.display = "block";
+    document.getElementById("mePage").style.display = "none";
+}
+</script>
+
+</body>
+</html>
 
