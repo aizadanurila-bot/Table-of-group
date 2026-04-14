@@ -1,135 +1,74 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Наша группа</title>
+    <title>Айзада</title>
 
     <style>
         body {
-            font-family: Arial;
-            background-color: #f5f7fa;
-            text-align: center;
-        }
-
-        h1 {
-            color: #2c3e50;
-        }
-
-        ul {
-            list-style: none;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4a90e2, #e94e77);
+            margin: 0;
             padding: 0;
         }
 
-        li {
+        .card {
             background: white;
-            margin: 5px auto;
             width: 300px;
-            padding: 8px;
-            border-radius: 8px;
-        }
-
-        a {
-            color: #2980b9;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 60%;
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-
-        th {
-            background: #3498db;
-            color: white;
+            margin: 80px auto;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
 
         img {
-            width: 300px;
-            border-radius: 10px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
         }
 
-        /* Скрытая страница */
-        #mePage {
-            display: none;
+        h1 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin: 6px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: #4a90e2;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #357abd;
         }
     </style>
+
 </head>
 <body>
 
-<!-- Главная страница -->
-<div id="mainPage">
+<div class="card">
+    <img src="me.jpg" alt="Айзада">
 
-<h1>Наша группа</h1>
-
-<h2>Список студентов</h2>
-<ul>
-    <li>Авьдал Бахатбек</li>
-    <li>Алтай Еркебұлан</li>
-    <li>Айдархан Әмина</li>
-    <li>Әуесбеков Алиби</li>
-    <li>Баймұрат Мұхамет</li>
-    <li>Базаралы Асқат</li>
-    <li><a href="#" onclick="showMe()">Бектемір Айзада</a></li>
-    <li>Баянғазина Мадина</li>
-    <li>Ербол Елқұт</li>
-    <li>Елюбаев Алихан</li>
-    <li>Кагва Бүрлен</li>
-    <li>Қаламбек Мағжан</li>
-    <li>Қадылбек Ділжан</li>
-    <li>Мырзабай Дінмұхамед</li>
-    <li>Серікбай Данияр</li>
-    <li>Талапхан Дина</li>
-    <li>Татен Нұрасыл</li>
-    <li>Темирбулатов Сұлтан</li>
-    <li>Тойлат Азамат</li>
-    <li>Уалиева Балжана</li>
-    <li>Халел Нұрмұхаммед</li>
-    <li>Хазкей Айболат</li>
-    <li>Шәуәт Нарат</li>
-</ul>
-
-<h2>Таблица студентов</h2>
-<table>
-<tr><th>№</th><th>Имя</th></tr>
-<tr><td>1</td><td>Авьдал Бахатбек</td></tr>
-<tr><td>2</td><td>Алтай Еркебұлан</td></tr>
-<tr><td>3</td><td>Айдархан Әмина</td></tr>
-<tr><td>4</td><td>Әуесбеков Алиби</td></tr>
-<tr><td>5</td><td>Баймұрат Мұхамет</td></tr>
-<tr><td>6</td><td>Базаралы Асқат</td></tr>
-<tr><td>7</td><td>Бектемір Айзада</td></tr>
-</table>
-
-<h2>Фото группы</h2>
-<img src="group.jpg">
-
-</div>
-
-<!-- Твоя страница -->
-<div id="mePage">
     <h1>Бектемір Айзада</h1>
-    <p>Я студентка и изучаю HTML и CSS.</p>
-    <button onclick="goBack()">Назад</button>
+
+    <p>📍 Атбасар</p>
+    <p>🎓 Студентка</p>
+    <p>💖 Интересы: музыка, учеба, общение</p>
+
+    <a href="index.html" class="btn">← Назад</a>
 </div>
-
-<script>
-function showMe() {
-    document.getElementById("mainPage").style.display = "none";
-    document.getElementById("mePage").style.display = "block";
-}
-
-function goBack() {
-    document.getElementById("mainPage").style.display = "block";
-    document.getElementById("mePage").style.display = "none";
-}
-</script>
 
 </body>
 </html>
